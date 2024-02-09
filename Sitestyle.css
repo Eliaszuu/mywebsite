@@ -1,0 +1,68 @@
+
+
+/*Header jede seite Gleich*/
+header{
+    display: flex;
+    align-items: center;
+    height:8rem;
+    background-color: rgba(132, 126, 182, 0.315);
+    border: #000;
+}
+
+.logolink{
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    width: 100%;
+    justify-content: left;
+}
+
+.logolink h1{
+    margin-left: 3rem;
+}
+
+
+/*Footer immer Gleich*/
+footer{
+    margin: 0;
+    background-color: rgba(104, 139, 59, 0.178);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+
+
+
+
+/*Links im Header*/
+.pagelinks{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-right: 10rem;
+}
+#pagenow{
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+
+/* Normale Links */
+a {
+    color: rgb(9, 9, 245);
+    text-decoration: none; /* Entfernt die standardmäßige Unterstreichung */
+}
+
+/* Hover-Effekt */
+a:hover {
+    text-decoration: underline; /* Unterstreichung bei Hover */
+    
+}
+
+/* Besuchte Links */
+a:visited {
+    color: purple;
+}

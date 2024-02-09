@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sounds</title>
+    <link rel="stylesheet" href="stylesounds.css">
+    <link rel="stylesheet" href="Sitestyle.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./titleimage/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./titleimage/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./titleimage/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./titleimage/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./titleimage/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./titleimage/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./titleimage/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./titleimage/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./titleimage/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./titleimage/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./titleimage/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./titleimage/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./titleimage/favicon-16x16.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logolink">
+            <a href="./index.html"><img src="./titleimage/favicon-96x96.ico" alt="Bild vom Logo"></a>
+            <h1>Elias Zimmerservice</h1>
+        </div>
+
+        <div class="pagelinks">
+            <a href="./index.html"> Home </a>
+            <a href="formular.html">Kontakt aufnehmen</a>
+            <a href="sounds.html" id="pagenow">Sounds</a>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="soundbuttons">
+
+            <div class="soundtemplate"><audio id="sound1" src="./sounds/monkeyscream.mp3" type="audio/mp3"></audio>
+                <button onclick="playSound('sound1')"><img height="150" src="./sounds/soundsimages/gorilla-448731_640.jpg" alt="Gorilla"></button>
+
+                <h3>AffenGeräusch</h3>
+
+                <a href="./sounds/monkeyscream.mp3" download="AffenGeraeusch.mp3"><img height="20rem" src="./images/download.png" alt="Herunterladen"> sound Herunterladen</a>
+            </div>
+
+            <div class="soundtemplate"><audio id="sound2" src="./sounds/cow.mp3" type="audio/mp3"></audio>
+                <button onclick="playSound('sound2')"><img height="150" src="./sounds/soundsimages/cow-1715829_640.jpg" alt="Cow"></button>
+
+                <h3>Kuhgeräusch</h3>
+
+                <a href="./sounds/cow.mp3" download="Kuhgeraeusch.mp3"><img height="20rem" src="./images/download.png" alt="Herunterladen"> sound Herunterladen</a>
+            </div>
+
+            <div class="soundtemplate"><audio id="sound3" src="./sounds/elephant.mp3" type="audio/mp3"></audio>
+                <button onclick="playSound('sound3')"><img height="150" src="./sounds/soundsimages/elephant-1421167_640.jpg" alt="elephant"></button>
+
+                <h3>Elephantgeräusch</h3>
+
+                <a href="./sounds/elephant.mp3" download="Elephantgeraeusch.mp3"><img height="20rem" src="./images/download.png" alt="Herunterladen"> sound Herunterladen</a>
+            </div>
+
+            <div class="soundtemplate"><audio id="sound4" src="./sounds/fart.mp3" type="audio/mp3"></audio>
+                <button onclick="playSound('sound4')"><img height="150" src="./sounds/soundsimages/garlic-3728409_640.jpg" alt="stinky garlic"></button>
+
+                <h3>Furz</h3>
+
+                <a href="./sounds/fart.mp3" download="Furz.mp3"><img height="20rem" src="./images/download.png" alt="Herunterladen"> sound Herunterladen</a>
+            </div>
+
+            <div class="soundtemplate"><audio id="sound5" src="./sounds/cheeringcrowd.mp3" type="audio/mp3"></audio>
+                <button onclick="playSound('sound5')"><img height="150" src="./sounds/soundsimages/cheeringcrowd.jpg" alt="crowd"></button>
+
+                <h3>Menschenmenge</h3>
+
+                <a href="./sounds/cheeringcrowd.mp3" download="Menschenmenge.mp3"><img height="20rem" src="./images/download.png" alt="Herunterladen"> sound Herunterladen</a>
+            </div>
+
+            <div class="soundtemplate"><audio id="sound6" src="./sounds/blastshot.mp3" type="audio/mp3"></audio>
+                <button onclick="playSound('sound6')"><img height="150" src="./sounds/soundsimages/blastshot.png" alt="gun"></button>
+
+                <h3>mysterygun</h3>
+
+                <a href="./sounds/blastshot.mp3" download="mysterygun.mp3"><img height="20rem" src="./images/download.png" alt="Herunterladen"> sound Herunterladen</a>
+            </div>
+           
+        </div>
+    </main>
+
+    <footer>
+        <h3>&copy; Elias Zulauf</h3>
+    </footer>
+
+
+    <script>
+        // JavaScript-Funktion zum Abspielen des Sounds
+        function playSound(soundId) {
+            var audio = document.getElementById(soundId);
+            audio.play();
+        }
+    </script>
+
+</body>
+
+</html>

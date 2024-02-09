@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(80, 174, 202, 0.288);
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}

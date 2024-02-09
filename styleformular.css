@@ -40,12 +40,6 @@ textarea {
 fieldset{
     background-color: rgba(44, 80, 41, 0.178);
 }
-h1{
-    background-color: rgba(58, 177, 48, 0.432);
-}
-
-
-
 
 main{
     margin-left: 10rem;
@@ -53,11 +47,21 @@ main{
     flex: 1;
 }
 
-footer{
-    margin: 0;
-    background-color: rgba(104, 139, 59, 0.178);
-    padding: 10px;
-    text-align: center;
-    position: sticky;
-    bottom: 0;
+
+
+/* Normale Links */
+a {
+    color: rgb(9, 9, 245);
+    text-decoration: none; /* Entfernt die standardmäßige Unterstreichung */
+}
+
+/* Hover-Effekt */
+a:hover {
+    text-decoration: underline; /* Unterstreichung bei Hover */
+    
+}
+
+/* Besuchte Links */
+a:visited {
+    color: purple;
 }
