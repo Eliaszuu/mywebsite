@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+    <link rel="stylesheet" href="styleformular.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>kontaktFormular</h1>
+    </header>
+    
+
+    <main>
+
+        <form>
+
+
+
+            <h2>Ihre Daten</h2>
+            <fieldset>
+                <legend>Angaben zur Person</legend>
+
+                <div class="container">
+
+                    <!-- Normales Textfeld -->
+                    <label>Vorname: <input type="text" name="username" /></label>
+                    <label>Nachname: <input type="text" name="username" /></label>
+
+
+                    <!-- Nummern Textfeld -->
+                    <label>Alter: <input type="number" name="age" /></label>
+
+
+                    <!-- Datum Textfeld -->
+                    <label id="Geburtstag">Geburtstaag: <input type="date" name="birthdate" /></label>
+
+                    <!-- Wohnort -->
+                    <label> Wohnort :
+                        <select name="canton" id="Wohnort-input">
+                            <option value="-----" selected>-----</option>
+                            <option value="AG">Aargau</option>
+                            <option value="AI">Appenzell Innerrhoden</option>
+                            <option value="AR">Appenzell Ausserrhoden</option>
+                            <option value="BE">Bern</option>
+                            <option value="BL">Basel-Landschaft</option>
+                            <option value="BS">Basel-Stadt</option>
+                            <option value="FR">Freiburg</option>
+                            <option value="GE">Genf</option>
+                            <option value="GL">Glarus</option>
+                            <option value="GR">Graubünden</option>
+                            <option value="JU">Jura</option>
+                            <option value="LU">Luzern</option>
+                            <option value="NE">Neuenburg</option>
+                            <option value="NW">Nidwalden</option>
+                            <option value="OW">Obwalden</option>
+                            <option value="SG">St. Gallen</option>
+                            <option value="SH">Schaffhausen</option>
+                            <option value="SO">Solothurn</option>
+                            <option value="SZ">Schwyz</option>
+                            <option value="TG">Thurgau</option>
+                            <option value="TI">Tessin</option>
+                            <option value="UR">Uri</option>
+                            <option value="VD">Waadt</option>
+                            <option value="VS">Wallis</option>
+                            <option value="ZG">Zug</option>
+                            <option value="ZH">Zürich</option>
+                        </select>
+                    </label>
+
+
+                    <label> Geschlecht:
+                        <label><input type="radio" name="gender" value="Männlich" required /> Männlich</label>
+                        <label><input type="radio" name="gender" value="Weiblich" required /> Weiblich</label>
+                        <label><input type="radio" name="gender" value="Helikopter" required /> Helikopter</label>
+                    </label>
+
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Kontaktdaten</legend>
+
+                <div class="container2">
+                    <!-- Email Textfeld -->
+                    <label>E-mail :<input type="email" name="email" /></label>
+
+                    <!-- Telefon Textfeld -->
+                    <label>Telephon: <input type="tel" name="phone" /></label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Sonstige Angaben</legend>
+
+                <div class="container">
+
+                    <!-- grosses Textfeld -->
+                    <textarea name="remarks" id="textarea"></textarea>
+
+                </div>
+            </fieldset>
+
+
+            <button type="submit">
+                <strong>SENDEN</strong>
+            </button>
+
+
+
+        </form>
+    </main>
+
+    <footer>
+        <h3>&copy; Elias Zulauf</h3>
+    </footer>
+
+
+</body>
+
+</html>

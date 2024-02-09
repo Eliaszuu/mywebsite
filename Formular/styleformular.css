@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(80, 174, 202, 0.288);
+    min-height: 100vh;
+}
+
+input:focus{
+    outline: 2px solid blue;
+}
+
+textarea {
+    resize: none;
+    /* Verhindert das Ändern der Größe des Textareas */
+    width: 300px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 11rem;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 3.5rem;
+}
+
+#Geburtstag{
+    margin-bottom: 0;
+}
+
+fieldset{
+    background-color: rgba(44, 80, 41, 0.178);
+}
+h1{
+    background-color: rgba(58, 177, 48, 0.432);
+}
+
+
+
+
+main{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    flex: 1;
+}
+
+footer{
+    margin: 0;
+    background-color: rgba(104, 139, 59, 0.178);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
