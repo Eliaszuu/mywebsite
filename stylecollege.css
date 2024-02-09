@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(80, 174, 202, 0.288);
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
+
+.linkscollege{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    border: 1px;
+    
+    background-color:rgba(69, 104, 98, 0.089);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.linkscollege div{
+    margin-bottom: 4rem;
+    font-size: 5rem;
+
+}
